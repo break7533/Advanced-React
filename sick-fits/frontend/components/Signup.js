@@ -37,11 +37,7 @@ class Signup extends React.Component {
 						<Form
 							method="post"
 							onSubmit={async (e) => {
-								e.preventDefault({
-									name: '',
-									password: '',
-									email: ''
-								});
+								e.preventDefault();
 								await signup();
 								this.setState({
 									name: '',
@@ -51,8 +47,8 @@ class Signup extends React.Component {
 							}}
 						>
 							<fieldset disabled={loading} aria-busy={loading}>
-								<Error error={error} />
 								<h2>Sign Up For A Account</h2>
+								<Error error={error} />
 								<label htmlFor="email">
 									Email
 									<input

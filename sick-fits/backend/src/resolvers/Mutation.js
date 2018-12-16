@@ -112,7 +112,7 @@ const Mutations = {
 		}
 
 		const password = await bcrypt.hash(args.password, 10);
-		const updateUser = ctx.db.mutation.updateUser({
+		const updateUser = await ctx.db.mutation.updateUser({
 			where: { email: user.email },
 			data: {
 				password,
