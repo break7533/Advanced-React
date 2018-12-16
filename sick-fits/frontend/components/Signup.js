@@ -10,7 +10,6 @@ const SIGNUP_MUTATION = gql`
 		signup(email: $email, name: $name, password: $password) {
 			id
 			email
-			password
 		}
 	}
 `;
