@@ -41,7 +41,7 @@ const Permissions = (props) => (
 			</div>
 		)}
 	</Query>
-);
+); 
 
 class PermUser extends React.Component {
 	render() {
