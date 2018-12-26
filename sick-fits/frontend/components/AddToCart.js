@@ -22,7 +22,7 @@ class AddToCart extends React.Component {
 				variables={{ id }}
 			>
 				{(addToCart, { loading }) => (
-					<button onClick={addToCart} disable={loading}>
+					<button onClick={addToCart} disabled={loading}>
 						Add{loading && 'ing'} To Cart
 					</button>
 				)}
