@@ -90,3 +90,4 @@ class Signup extends React.Component {
 }
 
 export default Signup;
+export { SIGNUP_MUTATION };
