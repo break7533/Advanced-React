@@ -2,7 +2,7 @@ import PaginationComponent, { PAGINATION_QUERY } from '../components/Pagination'
 import { mount } from 'enzyme';
 import wait from 'waait';
 import { MockedProvider } from 'react-apollo/test-utils';
-import toJSON, { toJson } from 'enzyme-to-json';
+import toJSON from 'enzyme-to-json';
 import Router from 'next/router';
 
 Router.router = {
